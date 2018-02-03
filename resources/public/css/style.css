@@ -1,0 +1,126 @@
+/* some style */
+
+body {
+  font-family: 'Orbitron', sans-serif !important;
+	background-color: #DDD !important;
+   text-align: center;
+   user-select: none;
+}
+
+.card {
+	float: left;
+	width: 150px;
+	height: 80px;
+   border-radius: 10px;
+	margin: 5px;
+	color: white;
+   font-weight: bold;
+   text-align: center;
+}
+
+.card-deck {
+   width: 50px;
+   text-align: center;
+}
+.card-back-3 {
+	background-color: darkslategrey;
+}
+.card-back-2 {
+	background-color: blueviolet;
+}
+.card-back-1 {
+	background-color: olive;
+}
+
+.res-banner {
+  height: 35%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+}
+.resource-pool {
+   float: none;
+   display: inline-block;
+}
+.sector-name   {
+   text-transform: capitalize;
+   color: #AAA;
+}
+
+.res-cost {
+  top: 10px;
+  display: inline-block;
+  float: none;
+}
+
+/* Shape Styles */
+
+.res {
+   text-align: center;
+   width: 45px;
+   height: 45px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background: gray;
+   float : left;
+   margin: 5px;
+   color: white;
+   font-size: 24px;
+   line-height: 1.8em;
+   cursor: pointer;
+}
+.res:hover  {
+   box-shadow: 0 0 3px 1px #88F;   ##rgba(0, 0, 256, 0.2);
+}
+.res-zero   {
+   border-width: 2px;
+   border-color: white;
+   border-style: dashed;
+   line-height: 1.6em;
+   opacity: 0.2;
+   cursor: default;
+}
+.res-small {
+   width:  20px;
+   height: 20px;
+   margin: 3px;
+   font-size: 12px;
+   line-height: 1.6em;
+}
+
+.res-black {
+   background: black;
+}
+.res-blue {
+	background: darkblue;
+}
+.res-white {
+	background: grey;
+}
+.res-red {
+	background: darkred;
+}
+.res-green {
+	background: darkgreen;
+}
+
+.res-count {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* Temporary Zone */
+
+.temp-zone  {
+   border-style: inset;
+   border-radius: 10px;
+   border-width: 2px;
+   border-color: #FFF;
+   max-height: 1000px;
+   transition: max-height 1s ease-out;
+}
+.temp-zone-hidden {
+   #max-height: 0px;
+   #overflow: hidden;
+   transition: max-height 1s ease-out;
+}
