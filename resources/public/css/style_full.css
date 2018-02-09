@@ -1,0 +1,163 @@
+/* some style */
+
+body {
+  font-family: 'Orbitron', sans-serif !important;
+	background-color: #DDD !important;
+   text-align: center;
+   user-select: none;
+}
+.sector-name   {
+   text-transform: capitalize;
+   color: #444;
+}
+
+/* Facilities */
+.facility  {
+   float: none;
+   display: inline-block;
+}
+
+.card {
+	float: left;
+	width: 120px;
+	height: 80px;
+   border-radius: 10px;
+   border-style: outset;
+   border-width: 2px;
+	margin: 5px;
+	color: white;
+   font-weight: bold;
+   text-align: center;
+   cursor: pointer;
+}
+
+.card:hover {
+   box-shadow: 0 0 3px 1px #88F;   ##rgba(0, 0, 256, 0.2);
+}
+
+.card-deck {
+   width: 50px;
+   text-align: center;
+}
+.card-back-3 {
+	background-color: darkslategrey;
+}
+.card-back-2 {
+	background-color: blueviolet;
+}
+.card-back-1 {
+	background-color: slategrey;
+}
+
+.card-banner {
+  height: 35%;
+  border-radius: 7px 7px 0px 0px;
+  padding: 5px;
+}
+.res-cost {
+  display: inline-block;
+  float: none;
+}
+
+.user-facility {
+   width: 50px;
+   height: 25px;
+   border-radius: 10px;
+   border: 2px solid gray;
+   border-style: outset;
+   float: left;
+   margin: 3px;
+   color: white;
+}
+
+/* Resource Styles */
+
+.resource-pool {
+   float: none;
+   display: inline-block;
+}
+.res {
+   text-align: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   float : left;
+   margin: 5px;
+   color: white;
+   font-size: 24px;
+   line-height: 1.7em;
+   cursor: pointer;
+}
+.res-zero   {
+   border-width: 2px;
+   border-color: white;
+   border-style: dashed;
+   opacity: 0.5;
+   cursor: default;
+}
+.res:hover  {
+   box-shadow: 0 0 3px 1px #88F;   ##rgba(0, 0, 256, 0.2);
+}
+.res-small {
+   text-align: center;
+   width:  20px;
+   height: 20px;
+   border-radius: 50%;
+   border: 1px solid dimgrey;
+   float : left;
+   margin: 3px;
+   color: white;
+   font-size: 12px;
+   line-height: 1.5em;
+}
+
+.res-black {
+   background: black;
+}
+.res-blue {
+	background: darkblue;
+}
+.res-white {
+	background: ghostwhite;
+   color: dimgrey;
+}
+.res-red {
+	background: darkred;
+}
+.res-green {
+	background: darkgreen;
+}
+.res-uni {
+  /*https://css-tricks.com/conical-gradients-css/*/
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  
+}
+.res-uni:hover {
+   box-shadow: 0 0 0;
+   cursor: default;
+}
+
+.res-count {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* Temporary Zone */
+
+.temp-zone  {
+   float: none;
+   display: inline-block;
+   border-style: inset;
+   border-radius: 10px;
+   border-width: 2px;
+   border-color: #FFF;
+   padding: 5px 10px;
+   max-height: 1000px;
+   transition: max-height 1s ease-out;
+}
+.temp-zone-hidden {
+   max-height: 0px;
+   overflow: hidden;
+   transition: max-height 1s ease-out;
+}
